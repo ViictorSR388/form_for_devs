@@ -1,0 +1,12 @@
+img {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 150px;
+
+    opacity: 0;
+}
+
+img.selected {
+    opacity: 1;
+}

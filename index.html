@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para Desenvolvedores</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <main>
+        <!-- ILUSTRAÇÃO DE HOMEM OU MULHER -->
+        <div id="slider">
+            <img src="./images/homem.png" class="selected" alt="um homem programador">
+            <img src="./images/mulher.png"  alt="uma mulher programadora">
+        </div>
+        <script src="./script/script.js"></script>
+        
+        <!-- FORMULÁRIO -->
+        <form>
+            <h1>CADASTRO DE DESENVOLVEDOR</h1>
+            
+            <div class="basic-information">
+                <input type="text" class="username" placeholder="NOME">
+                <input type="text" class="username" placeholder="SOBRENOME">
+                <input type="email" class="user-email" placeholder="EMAIL">    
+            </div>
+    
+            <div class="specialization-div">
+                <h2>QUAL AREA VOCÊ DESENVOLVE?</h2>
+                <div>
+                    <input type="radio" name="specializations" id="front-end">
+                    <label for="front-end">FRONT-END</label>
+                </div>
+                <div>
+                    <input type="radio" name="specializations" id="back-end">
+                    <label for="back-end">BACK-END</label>
+                </div>
+                <div>
+                    <input type="radio" name="specializations" id="fullstack">
+                    <label for="fullstack">FULLSTACK</label>
+                </div>
+            </div>
+    
+            <div class="seniority-div">
+                <h2>QUAL SEU NÍVEL DE SENIORIDADE?</h2>
+                <select name="seniority" id="seniority">
+                    <option value="nenhum">SELECIONE UMA SENIORIDADE</option>
+                    <option value="junior">JUNIOR</option>
+                    <option value="pleno">PLENO</option>
+                    <option value="senior">SENIOR</option>
+                </select>
+            </div>
+    
+            <div class="technologies-div">
+                <h2>QUAIS TECNOLOGIAS VOCÊ UTILIZA?</h2>
+                <div class="options">
+                    <div>
+                        <input type="checkbox" id="html">
+                        <label for="html">HTML</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="css">
+                        <label for="css">CSS</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="javascript">
+                        <label for="javascript">JAVASCRIPT</label>
+                    </div>
+                </div>
+                <div class="options">
+                    <div>
+                        <input type="checkbox" id="java">
+                        <label for="java">JAVA</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="csharp">
+                        <label for="csharp">C#</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="python">
+                        <label for="python">PYTHON</label>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="about-you-div">
+                <h2>FALE SOBRE VOCÊ</h2>
+                <textarea name="about-you" id="about-you" cols="30" rows="8"></textarea>
+            </div>
+
+            <input type="button" class="btn" value="CONCLUIR">
+        </form>
+    </main>
+</body>
+</html>

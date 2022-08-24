@@ -1,0 +1,61 @@
+@media screen and (max-width: 1655px) {
+    #slider {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    * {
+        font-size: 10px;
+    }
+    
+    form {
+        width: 350px;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    input.username {
+        width: 190px;
+        height: 30px;
+    }
+    
+    input.user-email {
+        width: 315px;
+        height: 30px;
+    }
+
+    div.specialization-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    form {
+        width: 300px;
+    }
+
+    input.user-email {
+        width: 280px;
+        height: 30px;
+    }
+
+    select#seniority {
+        width: 280px;
+    }
+
+    textarea {
+        width: 280px;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    html {
+        height: auto !important;
+    }
+}
